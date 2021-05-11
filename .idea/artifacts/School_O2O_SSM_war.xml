@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="School-O2O-SSM:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>School-O2O-SSM</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="o2o.war">
+      <element id="artifact" artifact-name="School-O2O-SSM:war exploded" />
+    </root>
+  </artifact>
+</component>
