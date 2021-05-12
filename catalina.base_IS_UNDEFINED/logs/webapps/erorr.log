@@ -1,0 +1,6 @@
+2021-05-12 14:43:11.669 [main] ERROR com.o2o.util.ImageUtil - javax.imageio.IIOException: Can't read input file!
+2021-05-12 14:53:54.943 [main] ERROR com.o2o.util.ImageUtil - javax.imageio.IIOException: Can't read input file!
+2021-05-12 14:55:29.478 [main] ERROR com.o2o.util.ImageUtil - javax.imageio.IIOException: Can't read input file!
+2021-05-12 14:55:55.268 [main] ERROR com.o2o.util.ImageUtil - javax.imageio.IIOException: Can't read input file!
+2021-05-12 14:57:00.308 [main] ERROR com.o2o.util.ImageUtil - javax.imageio.IIOException: Can't read input file!
+2021-05-12 15:00:35.706 [main] ERROR com.o2o.util.ImageUtil - javax.imageio.IIOException: Can't read input file!

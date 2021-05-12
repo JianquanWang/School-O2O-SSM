@@ -10,6 +10,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -43,18 +44,18 @@ public class ImageUtil {
      * @param targetAddr
      * @return
      */
-    public static String generateThumbnail(File thumbnail, String targetAddr){
+    public static String generateThumbnail(InputStream thumbnail, String fileName, String targetAddr){
         String realFileName = getRandomFileName();
-        String extension = getFileExtension(thumbnail);
+        String extension = getFileExtension(fileName);
         makeDirPath(targetAddr);
         String relativeAddr = targetAddr + realFileName + extension;
         logger.debug("current relativeAddr is:" + relativeAddr);
         File dest = new File(PathUtil.getImgBasePath() + relativeAddr);
         logger.debug("current completeAddr is:" + PathUtil.getImgBasePath() + relativeAddr);
         try {
-            String watermarkPath = basePath+"/watermark.jpg";
+            String watermarkPath = basePath+"watermark.jpg";
             Thumbnails.of(thumbnail).size(200, 200)
-                    .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(watermarkPath.replaceAll("//",System.getProperty("file.separator")))),0.25f)
+                    .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(watermarkPath.replace("/",System.getProperty("file.separator")))),0.25f)
                     .outputQuality(0.8f)
                     .toFile(dest);
         } catch (IOException e) {
@@ -72,16 +73,15 @@ public class ImageUtil {
         }
     }
 
-    private static String getFileExtension(File thumbnail) {
-        String originalFilename = thumbnail.getName();
-        return originalFilename.substring(originalFilename.lastIndexOf("."));
+    private static String getFileExtension(String fileName) {
+        return fileName.substring(fileName.lastIndexOf("."));
     }
 
     /**
      * 生成随机文件名, 当前年月日小时分钟秒钟+五位随机数
      * @return
      */
-    private static String getRandomFileName() {
+    public static String getRandomFileName() {
         int rannum = r.nextInt(89999) + 10000;
         String nowTimeStr = sDateFormat.format(new Date());
         return nowTimeStr + rannum;
