@@ -1,0 +1,5 @@
+com\o2o\dao\AreaDaoTest.class
+com\o2o\dao\ShopDaoTest.class
+com\o2o\service\ShopServiceTest.class
+com\o2o\BaseTest.class
+com\o2o\service\AreaServiceTest.class
