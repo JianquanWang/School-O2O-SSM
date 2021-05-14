@@ -7,6 +7,7 @@ import com.o2o.entity.PersonInfo;
 import com.o2o.entity.Shop;
 import com.o2o.entity.ShopCategory;
 import com.o2o.enums.ShopStateEnum;
+import com.o2o.exceptions.ShopOperationException;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -45,5 +46,16 @@ public class ShopServiceTest extends BaseTest {
         InputStream is = new FileInputStream(shopImg);
         ShopExecution se = shopService.addShop(shop, is, shopImg.getName());
         assertEquals(ShopStateEnum.CHECK.getState(), se.getState());
+    }
+
+    @Test
+    public void testModifyShop() throws ShopOperationException, FileNotFoundException{
+        Shop shop = new Shop();
+        shop.setShopId(35L);
+        shop.setShopName("修改后的店铺名称");
+        File shopImg = new File("G:\\2021\\project\\image\\dabai.jpg");
+        InputStream is = new FileInputStream(shopImg);
+        ShopExecution se = shopService.modifyShop(shop, is, "dabai.jpg");
+        System.out.println("新的图片地址" + se.getShop().getShopImg());
     }
 }

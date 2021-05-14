@@ -93,4 +93,22 @@ public class ImageUtil {
                 .outputQuality(0.8f)
                 .toFile("G:\\2021\\project\\image\\buzhihuo2.jpg");
     }
+
+    /**
+     * storePath 是文件路径还是目录路径, 如果storePath是文件, 则删除文件
+     * 如果storePath是目录, 则删除该目录下的所有文件
+     * @param storePath
+     */
+    public static void deleteFileOrPath(String storePath){
+        File fileOrPath = new File(PathUtil.getImgBasePath() + storePath);
+        if(fileOrPath.exists()){
+            if(fileOrPath.isDirectory()){
+                File[] files = fileOrPath.listFiles();
+                for(File file : files){
+                    file.delete();
+                }
+            }
+            fileOrPath.delete();
+        }
+    }
 }

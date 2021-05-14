@@ -1,11 +1,15 @@
+com\o2o\dao\ShopCategoryDao.class
 com\o2o\enums\ShopStateEnum.class
 com\o2o\web\superadmin\AreaController.class
 com\o2o\entity\Product.class
+com\o2o\service\impl\ShopCategoryServiceImpl.class
 com\o2o\exceptions\ShopOperationException.class
 com\o2o\entity\ProductImg.class
+com\o2o\util\CodeUtil.class
 com\o2o\entity\Shop.class
 com\o2o\entity\HeadLine.class
 com\o2o\util\ImageUtil.class
+com\o2o\service\ShopCategoryService.class
 com\o2o\service\impl\ShopServiceImpl.class
 com\o2o\entity\LocalAuth.class
 com\o2o\entity\ShopCategory.class
