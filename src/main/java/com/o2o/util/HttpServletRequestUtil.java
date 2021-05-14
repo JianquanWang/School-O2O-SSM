@@ -37,7 +37,7 @@ public class HttpServletRequestUtil {
 
     public static String getString(HttpServletRequest request, String key){
         try{
-            String result = request.getParameter(key);
+            String result = new String(request.getParameter(key).getBytes("utf-8"));
             if(result != null){
                 result = result.trim();
             }
