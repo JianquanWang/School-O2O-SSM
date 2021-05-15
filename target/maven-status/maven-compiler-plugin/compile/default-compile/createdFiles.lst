@@ -8,6 +8,7 @@ com\o2o\entity\ProductImg.class
 com\o2o\util\CodeUtil.class
 com\o2o\entity\Shop.class
 com\o2o\entity\HeadLine.class
+com\o2o\util\PageCalculator.class
 com\o2o\util\ImageUtil.class
 com\o2o\service\ShopCategoryService.class
 com\o2o\service\impl\ShopServiceImpl.class
