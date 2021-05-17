@@ -3,3 +3,6 @@
 2021-05-17 16:07:46.660 [main] DEBUG c.o.d.P.batchInsertProductCategory - ==>  Preparing: INSERT into tb_product_category(product_category_name, priority, create_time, shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
 2021-05-17 16:07:46.810 [main] DEBUG c.o.d.P.batchInsertProductCategory - ==> Parameters: 商品类别1(String), 1(Integer), 2021-05-17 16:07:46.228(Timestamp), 15(Long), 商品类别2(String), 2(Integer), 2021-05-17 16:07:46.228(Timestamp), 15(Long)
 2021-05-17 16:07:46.900 [main] DEBUG c.o.d.P.batchInsertProductCategory - <==    Updates: 2
+2021-05-17 16:55:00.861 [main] DEBUG c.o.d.P.batchInsertProductCategory - ==>  Preparing: INSERT into tb_product_category(product_category_name, priority, create_time, shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2021-05-17 16:55:00.922 [main] DEBUG c.o.d.P.batchInsertProductCategory - ==> Parameters: 商品类别1(String), 1(Integer), 2021-05-17 16:55:00.457(Timestamp), 15(Long), 商品类别2(String), 2(Integer), 2021-05-17 16:55:00.457(Timestamp), 15(Long)
+2021-05-17 16:55:00.937 [main] DEBUG c.o.d.P.batchInsertProductCategory - <==    Updates: 2
