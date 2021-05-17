@@ -1,3 +1,5 @@
-2021-05-16 21:21:20.579 [main] DEBUG c.o.d.ProductCategoryDao.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
-2021-05-16 21:21:20.650 [main] DEBUG c.o.d.ProductCategoryDao.queryProductCategoryList - ==> Parameters: 15(Long)
-2021-05-16 21:21:20.725 [main] DEBUG c.o.d.ProductCategoryDao.queryProductCategoryList - <==      Total: 1
+2021-05-17 16:04:21.120 [main] DEBUG c.o.d.P.batchInsertProductCategory - ==>  Preparing: INSERT into tb_product_category(product_category_name, priority, create_time, shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2021-05-17 16:04:21.250 [main] DEBUG c.o.d.P.batchInsertProductCategory - ==> Parameters: 商品类别2(String), 2(Integer), 2021-05-17 16:04:20.684(Timestamp), 15(Long), null, null, null, null
+2021-05-17 16:07:46.660 [main] DEBUG c.o.d.P.batchInsertProductCategory - ==>  Preparing: INSERT into tb_product_category(product_category_name, priority, create_time, shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2021-05-17 16:07:46.810 [main] DEBUG c.o.d.P.batchInsertProductCategory - ==> Parameters: 商品类别1(String), 1(Integer), 2021-05-17 16:07:46.228(Timestamp), 15(Long), 商品类别2(String), 2(Integer), 2021-05-17 16:07:46.228(Timestamp), 15(Long)
+2021-05-17 16:07:46.900 [main] DEBUG c.o.d.P.batchInsertProductCategory - <==    Updates: 2
