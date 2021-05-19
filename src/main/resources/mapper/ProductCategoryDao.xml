@@ -32,7 +32,7 @@
         DELETE FROM
         tb_product_category
         WHERE
-        prodcut_category_id = #{productCategoryId}
+        product_category_id = #{productCategoryId}
         AND shop_id = #{shopId}
     </delete>
 </mapper>

@@ -1,8 +1,5 @@
-2021-05-17 16:04:21.120 [main] DEBUG c.o.d.P.batchInsertProductCategory - ==>  Preparing: INSERT into tb_product_category(product_category_name, priority, create_time, shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
-2021-05-17 16:04:21.250 [main] DEBUG c.o.d.P.batchInsertProductCategory - ==> Parameters: 商品类别2(String), 2(Integer), 2021-05-17 16:04:20.684(Timestamp), 15(Long), null, null, null, null
-2021-05-17 16:07:46.660 [main] DEBUG c.o.d.P.batchInsertProductCategory - ==>  Preparing: INSERT into tb_product_category(product_category_name, priority, create_time, shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
-2021-05-17 16:07:46.810 [main] DEBUG c.o.d.P.batchInsertProductCategory - ==> Parameters: 商品类别1(String), 1(Integer), 2021-05-17 16:07:46.228(Timestamp), 15(Long), 商品类别2(String), 2(Integer), 2021-05-17 16:07:46.228(Timestamp), 15(Long)
-2021-05-17 16:07:46.900 [main] DEBUG c.o.d.P.batchInsertProductCategory - <==    Updates: 2
-2021-05-17 16:55:00.861 [main] DEBUG c.o.d.P.batchInsertProductCategory - ==>  Preparing: INSERT into tb_product_category(product_category_name, priority, create_time, shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
-2021-05-17 16:55:00.922 [main] DEBUG c.o.d.P.batchInsertProductCategory - ==> Parameters: 商品类别1(String), 1(Integer), 2021-05-17 16:55:00.457(Timestamp), 15(Long), 商品类别2(String), 2(Integer), 2021-05-17 16:55:00.457(Timestamp), 15(Long)
-2021-05-17 16:55:00.937 [main] DEBUG c.o.d.P.batchInsertProductCategory - <==    Updates: 2
+2021-05-18 23:07:34.156 [main] DEBUG c.o2o.dao.ProductCategoryDao.deleteProductCategory - ==>  Preparing: DELETE FROM tb_product_category WHERE prodcut_category_id = ? AND shop_id = ? 
+2021-05-18 23:07:34.239 [main] DEBUG c.o2o.dao.ProductCategoryDao.deleteProductCategory - ==> Parameters: 28(Long), 15(Long)
+2021-05-18 23:08:04.273 [main] DEBUG c.o2o.dao.ProductCategoryDao.deleteProductCategory - ==>  Preparing: DELETE FROM tb_product_category WHERE product_category_id = ? AND shop_id = ? 
+2021-05-18 23:08:04.512 [main] DEBUG c.o2o.dao.ProductCategoryDao.deleteProductCategory - ==> Parameters: 28(Long), 15(Long)
+2021-05-18 23:08:04.633 [main] DEBUG c.o2o.dao.ProductCategoryDao.deleteProductCategory - <==    Updates: 1
